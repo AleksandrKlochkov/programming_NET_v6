@@ -18,10 +18,9 @@ namespace programming_NET_v6
         }
 
         public void Exponentiation() {
+            //Возведение разности в 3 степень
             this.c = Math.Pow(this.a - this.b, 3);
-            
             Console.WriteLine("Результат: "+ c);
-            //Math.Pow()
                 
         }
     }

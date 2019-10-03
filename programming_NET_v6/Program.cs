@@ -50,12 +50,15 @@ namespace programming_NET_v6
                                 string keyB = Console.ReadLine();
                                 if (!int.TryParse(keyA, out a) || !int.TryParse(keyB, out b))
                                 {
-                                    Console.WriteLine("Ошибка! Вы ввели не число попробуйте снова");
+                                    Console.WriteLine("Ошибка! Вы ввели не верные значения, попробуйте снова");
                                     one = true;
                                 }
                                 else {
                                     Task1 task1 = new Task1(a,b);
                                     task1.Exponentiation();
+                                    Console.WriteLine("Нажмите любую клавишу для выхода в меню");
+                                    Console.ReadKey();
+                                    task = true;
                                 }
                                
                             }
@@ -64,6 +67,7 @@ namespace programming_NET_v6
                             break;
                         case 2:
                             Console.WriteLine("Задание 2");
+                            Console.WriteLine("Построить иерархию классов в соответствии с вариантом задания.\r\nДеталь, механизм, изделие, узел");
                             break;
                         case 3:
                             Console.WriteLine("Задание 3");
